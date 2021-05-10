@@ -1,6 +1,6 @@
-**# Vue-vConsole-devtools**
+# vconsole-vue-devtool-plugin
 
-`Vue-vConsole-devtools` 是一款`vConsole`插件，把`Vue.js`官方调试工具`vue-devtools`移植到移动端，可以直接在移动端查看调试`Vue.js`应用
+`vconsole-vue-devtool-plugin` 是一款`vConsole`插件，把`Vue.js`官方调试工具`vue-devtools`移植到移动端，可以直接在移动端查看调试`Vue.js`应用
 
 ![WechatIMG71.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/68d77a8750fb459cab9aab3e09c3b9a0~tplv-k3u1fbpfcp-watermark.image)
 ### 为什么需要本插件：
@@ -15,14 +15,14 @@
 3. 现已支持微信端内浏览器
 ### 使用方式
 
-1. ```npm i -s vue-vconsole-devtools```
+1. ```npm install vconsole-vue-devtool-plugin --dev-save ```
 
 2. 在工程中入口文件 （如`src/main.js`）
 
 ```javascript
 ...
 import VConsole from "vconsole";
-import Devtools from 'vue-vconsole-devtools'
+import Devtools from 'vconsole-vue-devtool-plugin'
 Devtools.initPlugin(new VConsole()); // 需要在创建Vue根实例前调用
 ...
 ```
@@ -38,7 +38,7 @@ Devtools.initPlugin(new VConsole()); // 需要在创建Vue根实例前调用
    
    // 在创建跟实例以后调用， 需要借助webpack的异步模块加载能力
    if(process.env.NODE_ENV === "development"){
-      Promise.all([import("vconsole"), import("vue-vconsole-devtools")]).then(
+      Promise.all([import("vconsole"), import("vconsole-vue-devtool-plugin")]).then(
         (res) => {
           if (res.length === 2) {
             Vue.config.devtools = true;
