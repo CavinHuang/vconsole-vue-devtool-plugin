@@ -2,7 +2,7 @@
 
 `vconsole-vue-devtool-plugin` 是一款`vConsole`插件，把`Vue.js`官方调试工具`vue-devtools`移植到移动端，可以直接在移动端查看调试`Vue.js`应用
 
-![WechatIMG71.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/68d77a8750fb459cab9aab3e09c3b9a0~tplv-k3u1fbpfcp-watermark.image)
+![WechatIMG71.png](https://github.com/CavinHuang/vconsole-vue-devtool-plugin/blob/main/dev/src/assets/example.png)
 ### 为什么需要本插件：
 
 1. 在Safari和移动端无法直接调试Vue.js
