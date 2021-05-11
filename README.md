@@ -64,9 +64,9 @@ Devtools.initPlugin(new VConsole()); // 需要在创建Vue根实例前调用
 2. 开发脱离vConsole版本
 3. webpack plugin
 
-**### Sample code**
+### Sample code
 
-[Github](https://github.com/CavinHuang/vconsole-vue-devtool-plugin/dev)
+[Github](https://github.com/CavinHuang/vconsole-vue-devtool-plugin/tree/main/dev)
 
 ### 实现过程
 实现过程
